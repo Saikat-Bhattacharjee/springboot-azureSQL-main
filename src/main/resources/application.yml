@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://gjtestserver.database.windows.net:1433;database=gjtestkafka;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: gjadmin
+    password: Gj12345678
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 9191
